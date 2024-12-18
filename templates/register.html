@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+
+
+    <h1>Register</h1>
+    <form action="/register" method="post">
+
+        <label>Name:</label>
+        <input type="text" autofocus autocomplete="off" name="name" placeholder="Enter your name" required>
+
+        <label>Email:</label>
+        <input type="email" autofocus autocomplete="off" name="email" placeholder="Enter your email" required>
+
+        <label>Password:</label>
+        <input type="password" autofocus autocomplete="off" name="password" placeholder="Enter your Password" required>
+        <label>Re-enter Password:</label>
+        <input type="password" autofocus autocomplete="off" name="repassword" placeholder="Re-enter your Password" required>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <a href="/login">Login</a> 
+
+
+{% endblock %}
